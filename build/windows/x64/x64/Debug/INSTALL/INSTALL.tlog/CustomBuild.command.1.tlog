@@ -1,0 +1,10 @@
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\CMAKEFILES\7E3A2B8821C873DE2DB00785E11D4508\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

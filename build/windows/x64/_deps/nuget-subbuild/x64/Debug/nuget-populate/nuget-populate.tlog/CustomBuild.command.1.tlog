@@ -1,0 +1,162 @@
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/tmp/nuget-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-DOWNLOAD.RULE
+setlocal
+cd F:\MindSync-Menta_Health_App\build\windows\x64\_deps
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/download-nuget-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/verify-nuget-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-COPYFILE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget.exe F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-copyfile
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-CONFIGURE.RULE
+setlocal
+cd F:\MindSync-Menta_Health_App\build\windows\x64\_deps\nuget-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-BUILD.RULE
+setlocal
+cd F:\MindSync-Menta_Health_App\build\windows\x64\_deps\nuget-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-INSTALL.RULE
+setlocal
+cd F:\MindSync-Menta_Health_App\build\windows\x64\_deps\nuget-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\FDC417BA4C03E2E17759A858C7A0866D\NUGET-POPULATE-TEST.RULE
+setlocal
+cd F:\MindSync-Menta_Health_App\build\windows\x64\_deps\nuget-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\B15A43C1A47CDAC27BA02B65F6B1D4B4\NUGET-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/Debug/nuget-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\2D76195BBD5B6C530858CC6DECFBCA2B\NUGET-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SF:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild -BF:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild --check-stamp-file F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

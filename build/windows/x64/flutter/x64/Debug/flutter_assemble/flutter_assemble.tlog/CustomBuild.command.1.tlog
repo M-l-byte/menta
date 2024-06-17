@@ -1,0 +1,28 @@
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\CMAKEFILES\021439647883D5316840DA5A28AFC5A9\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\mohit\Downloads\flutter_windows_3.10.6-stable\flutter PROJECT_DIR=F:\MindSync-Menta_Health_App FLUTTER_ROOT=C:\Users\mohit\Downloads\flutter_windows_3.10.6-stable\flutter FLUTTER_EPHEMERAL_DIR=F:\MindSync-Menta_Health_App\windows\flutter\ephemeral PROJECT_DIR=F:\MindSync-Menta_Health_App FLUTTER_TARGET=F:\MindSync-Menta_Health_App\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC8zZjNlNTYwMjM2NTM5YjdlMjcwMmY1YWM3OTBiMmE0NjkxYjMyZDQ5Lw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=F:\MindSync-Menta_Health_App\.dart_tool\package_config.json C:/Users/mohit/Downloads/flutter_windows_3.10.6-stable/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\BUILD\WINDOWS\X64\CMAKEFILES\A300D344CFBD8E5351B17213DF5A3A18\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\MINDSYNC-MENTA_HEALTH_APP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SF:/MindSync-Menta_Health_App/windows -BF:/MindSync-Menta_Health_App/build/windows/x64 --check-stamp-file F:/MindSync-Menta_Health_App/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,147 @@
+import 'package:flutter/material.dart';
+import 'package:mindsync/model/question_model.dart';
+import 'package:mindsync/screen/TalkBot.dart';
+import 'package:mindsync/widget/BottomNavigaton.dart';
+import 'package:mindsync/widget/question_widget.dart';
+
+class Test2 extends StatefulWidget {
+  @override
+  // ignore: library_private_types_in_public_api
+  _TestState createState() => _TestState();
+}
+
+class _TestState extends State<Test2> {
+  final PageController _pageController = PageController();
+  List<Question> questions = [
+    Question(
+        "Question 1: When considering the past month, how often have you experienced distressing dreams related to the traumatic event?",
+        0),
+    Question(
+        "Question 2: Over the past month, how often have you had recurrent, involuntary memories of the traumatic event(s)?",
+        0),
+    Question(
+        "Question 3: Have you ever felt as though the traumatic event(s) were happening again (as if you were reliving it)?",
+        0),
+    Question(
+        "Question 4: How often do you actively avoid thoughts, feelings, conversations, or situations that remind you of the traumatic event(s)?",
+        0),
+    Question(
+        "Question 5: Have you experienced feelings of detachment or estrangement from others since the traumatic event(s)?",
+        0),
+    Question(
+        "Question 6: In the past month, how often have you experienced difficulty concentrating on things, such as work or school?",
+        0),
+    Question(
+        "Question 7: Have you had difficulty falling or staying asleep since the traumatic event(s)?",
+        0),
+    Question(
+        "Question 8: How often have you felt irritable or had angry outbursts since the traumatic event(s)?",
+        0),
+    Question(
+        "Question 9: Do you often feel hypervigilant or constantly on guard since the traumatic event(s)?",
+        0),
+    Question(
+        "Question 10: Considering all your responses, how much have these symptoms affected your daily life and functioning in the past month?",
+        0),
+  ];
+
+  double totalScore = 0;
+  int currentPageIndex = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // backgroundColor: grad,
+      bottomNavigationBar: NaviBar(
+        currindex: 0,
+      ),
+      // appBar: AppBar(
+      //   title: Text(
+      //     'Test',
+      //     style: TextStyle(
+      //       fontSize: 25,
+      //       // color: Theme.of(context).primaryColor,
+      //     ),
+      //   ),
+      //   backgroundColor: Colors.blue[300],
+      // ),
+      body: Container(
+        decoration:
+            const BoxDecoration(color: Color.fromARGB(255, 125, 112, 161)),
+        child: PageView.builder(
+          controller: _pageController,
+          itemCount: questions.length,
+          onPageChanged: (index) {
+            setState(() {
+              currentPageIndex = index;
+            });
+          },
+          itemBuilder: (context, index) {
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  QuestionWidget(
+                    question: questions[currentPageIndex],
+                    onOptionSelected: (score) {
+                      setState(() {
+                        questions[currentPageIndex].score = score;
+                        totalScore = questions
+                            .map((question) => question.score)
+                            .reduce((a, b) => a + b);
+
+                        if (currentPageIndex < questions.length - 1) {
+                          currentPageIndex++;
+                          _pageController.nextPage(
+                            duration: Duration(milliseconds: 500),
+                            curve: Curves.ease,
+                          );
+                        } else {
+                          Navigator.pushAndRemoveUntil(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const TalkToBot()),
+                              (route) => false);
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                title: const Text(
+                                  'Mental Health Score',
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                content: Text(
+                                  'Score: $totalScore/10',
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: const Text('Close'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                        }
+                      });
+                    },
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}

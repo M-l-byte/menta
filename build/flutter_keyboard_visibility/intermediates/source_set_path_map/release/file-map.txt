@@ -1,0 +1,12 @@
+com.jrai.flutter_keyboard_visibility-jetified-window-java-1.0.0-beta04-0 C:\Users\mohit\.gradle\caches\transforms-3\1019fd8b46cdef0a46e5025f27dbbaeb\transformed\jetified-window-java-1.0.0-beta04\res
+com.jrai.flutter_keyboard_visibility-core-1.6.0-1 C:\Users\mohit\.gradle\caches\transforms-3\2ce523dc0a7c5502678667fc0020028d\transformed\core-1.6.0\res
+com.jrai.flutter_keyboard_visibility-jetified-window-1.0.0-beta04-2 C:\Users\mohit\.gradle\caches\transforms-3\3522d6b74be37cadbfcf43181c15f5f3\transformed\jetified-window-1.0.0-beta04\res
+com.jrai.flutter_keyboard_visibility-jetified-annotation-experimental-1.1.0-3 C:\Users\mohit\.gradle\caches\transforms-3\3bc74634b9ff8467c90f9b0e18fc6564\transformed\jetified-annotation-experimental-1.1.0\res
+com.jrai.flutter_keyboard_visibility-main-4 C:\Users\mohit\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_keyboard_visibility-6.0.0\android\src\main\res
+com.jrai.flutter_keyboard_visibility-release-5 C:\Users\mohit\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_keyboard_visibility-6.0.0\android\src\release\res
+com.jrai.flutter_keyboard_visibility-pngs-6 F:\MindSync-Menta_Health_App\build\flutter_keyboard_visibility\generated\res\pngs\release
+com.jrai.flutter_keyboard_visibility-resValues-7 F:\MindSync-Menta_Health_App\build\flutter_keyboard_visibility\generated\res\resValues\release
+com.jrai.flutter_keyboard_visibility-rs-8 F:\MindSync-Menta_Health_App\build\flutter_keyboard_visibility\generated\res\rs\release
+com.jrai.flutter_keyboard_visibility-mergeReleaseResources-9 F:\MindSync-Menta_Health_App\build\flutter_keyboard_visibility\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.jrai.flutter_keyboard_visibility-mergeReleaseResources-10 F:\MindSync-Menta_Health_App\build\flutter_keyboard_visibility\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.jrai.flutter_keyboard_visibility-merged_res-11 F:\MindSync-Menta_Health_App\build\flutter_keyboard_visibility\intermediates\merged_res\release

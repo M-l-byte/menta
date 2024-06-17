@@ -1,0 +1,15 @@
+# Target labels
+ nuget-populate
+# Source files and their labels
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/nuget-populate
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2d76195bbd5b6c530858cc6decfbca2b/nuget-populate.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/b15a43c1a47cdac27ba02b65f6b1d4b4/nuget-populate-complete.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-build.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-configure.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-copyfile.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-download.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-install.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-mkdir.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-patch.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-test.rule
+F:/MindSync-Menta_Health_App/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/fdc417ba4c03e2e17759a858c7a0866d/nuget-populate-update.rule
